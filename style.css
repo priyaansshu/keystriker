@@ -1,10 +1,10 @@
 @font-face{
     font-family: "SFProDisplayBold";
-    src: url("../keystriker.github.io/Keyboardfonts/SF-UI-Display-Bold.otf");
+    src: url("SF-UI-Display-Bold.otf");
 }
 @font-face{
     font-family: "SFProDisplayLight";
-    src: url("../keystriker.github.io/Keyboardfonts/FontsFree-Net-SFProDisplay-Light.ttf");
+    src: url("FontsFree-Net-SFProDisplay-Light.ttf");
 }
 
 body {
