@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyStriker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/kslogotransparent2.png">
+</head>
+<body> 
+    <div class="menu" id="menu">
+        <div class="closemenu1" #id="closemenu1" onclick="closemenu()"><img src="images/leftarrow.png" alt="leftarrow" class="closeimage" id="leftarrowclose"></div>
+        <div class="menucontent">
+            <div class="modes">
+                <h1 id="modesheading">Challenges</h1>
+                <ul class="modeslist">
+                    <li id="easy" onclick="easylink()">
+                        <p class="easylink">easy</p>
+                        <p class="easyhover">20 keys/ 30 secs</p>
+                    </li>
+                    <li id="medium" onclick="mediumlink()">
+                        <p class="mediumlink">medium</p>
+                        <p class="mediumhover">30 keys/ 30 secs</p>
+                    </li>
+                    <li id="hard" onclick="hardlink()">
+                        <p class="hardlink">hard</p>
+                        <p class="hardhover">40 keys/ 30 secs</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="verticalline"><img src="images/line.png" alt="verticalline" class="vl" id="vl1"></div>
+            <div class="themes">
+                <h1 id="themesheading">Themes</h1>
+                <ul class="themeslist">
+                    <li id="black" onclick="black()"><p class="blacktext">black</p></li>
+                    <li id="red" onclick="red()"><p class="redtext">Red</p></li>
+                </ul>
+            </div>
+            <div class="verticalline"><img src="images/line.png" alt="verticalline" class="vl" id="vl1"></div>
+            <div class="about">
+                <h1 id="aboutheading">About</h1>
+                <p id="createdby">Created by</p>
+                <p id="PriyanshuModi">Priyanshu Modi</p>
+                <p id="contact">Get In Touch</p>
+                <img src="images/gmail.png" alt="gmail logo" id="gmail" onclick="opengmail()">
+                <img src="images/linkedin.png" alt="linkedin logo" id="linkedin" onclick="openlinkedin()">
+            </div>
+        </div> <!--menucontent-->
+        <div class="closemenu2" #id="closemenu2" onclick="closemenu()"><img src="images/rightarrow.png" alt="rightarrow" class="closeimage" id="rightarrowclose"></div>   
+    </div> <!--menu-->
+    <div class="closemenu" onclick="closemenu()"></div>
+    <div class="openmenu1" #id="openmenu1" onclick="openmenu()"><img src="images/rightarrow.png" alt="rightarrow" class="openimage" id="rightarrowopen"></div>
+    <div class="openmenu2" #id="openmenu2" onclick="openmenu()"><img src="images/leftarrow.png" alt="leftarrow" class="openimage" id="leftarrowopen"></div>   
+    <div class="container">
+    <div class="topelement">
+        <div class="titlediv">
+            <h1 class="title" id="toptitle" onclick="openindex()">KeyStriker</h1></a>
+        </div>
+        <div class="buttondiv">
+            <button class="btn" id="playbutton" type="button" onclick="timerfunction()">
+                <p class="playbuttontext" id="playtext">play</p>
+                <p class="playbuttontext" id="strike">strike</p>
+            </button>
+        </div>
+    </div>
+    <div class="keyboard">
+        <ul class="row row-0" id="r0">
+            <li class="pinky" id="esc">ESC</li>
+            <li class="pinky" id="1">1</li>
+            <li class="ring" id="2">2</li>
+            <li class="middle" id="3">3</li>
+            <li class="pointer1st" id="4">4</li>
+            <li class="pointer2nd" id="5">5</li>
+            <li class="pointer2nd" id="6">6</li>
+            <li class="pointer1st" id="7">7</li>
+            <li class="middle" id="8">8</li>
+            <li class="ring" id="9">9</li>
+            <li class="pinky" id="10">0</li>
+            <li class="pinky" >-</li>
+            <li class="pinky" >+</li>
+            <li class="pinky" id="back">BACK</li>
+        </ul>
+        <ul class="row row-1" id="r1">
+            <li class="pinky" id="tab">TAB</li>
+            <li class="pinky" id="Q">Q</li>
+            <li class="ring" id="W">W</li>
+            <li class="middle" id="E">E</li>
+            <li class="pointer1st" id="R">R</li>
+            <li class="pointer2nd" id="T">T</li>
+            <li class="pointer2nd" id="Y">Y</li>
+            <li class="pointer1st" id="U">U</li>
+            <li class="middle" id="I">I</li>
+            <li class="ring" id="O">O</li>
+            <li class="pinky" id="P">P</li>
+            <li class="pinky" id="openbracket">[</li>
+            <li class="pinky" id="closebracket">]</li>
+            <li class="pinky" id="backslash">\</li>
+        </ul>
+        <ul class="row row-2" id="r2">
+            <li class="pinky" id="caps">CAPS</li>
+            <li class="pinky" id="A">A</li>
+            <li class="ring" id="S">S</li>
+            <li class="middle" id="D">D</li>
+            <li class="pointer1st" id="F">F</li>
+            <li class="pointer2nd" id="G">G</li>
+            <li class="pointer2nd" id="H">H</li>
+            <li class="pointer1st" id="J">J</li>
+            <li class="middle" id="K">K</li>
+            <li class="ring" id="L">L</li>
+            <li class="pinky" >:</li>
+            <li class="pinky" >''</li>
+            <li class="pinky" id="enter">ENTER</li>
+        </ul>
+        <ul class="row row-3" id="r3">
+            <li class="pinky" id="left-shift">SHIFT</li>
+            <li class="pinky" id="Z">Z</li>
+            <li class="ring" id="X">X</li>
+            <li class="middle" id="C">C</li>
+            <li class="pointer1st" id="V">V</li>
+            <li class="pointer2nd" id="B">B</li>
+            <li class="pointer2nd" id="N">N</li>
+            <li class="pointer1st" id="M">M</li>
+            <li class="middle" >,</li>
+            <li class="ring" >.</li>
+            <li class="pinky" >?</li>
+            <li class="pinky" id="right-shift">SHIFT</li>
+        </ul>
+    </div>
+    <div class="gameelementscontainer">
+        <div class="timer">
+            <p id="timer">30</p>
+        </div>
+        <div class="score">
+            <p id="score">0</p>
+        </div>
+    </div>
+    <div class="scorecontainer">
+        <div class="highscore">
+            <p id="highscore"></p>
+        </div>
+        <div class="lastscore">
+            <p id="lastscore"></p>
+        </div>
+    </div>
+    </div> <!--container-->
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/priyanshu-modi-5675941b5/" class="linkedin" target="_blank">
+            © Priyanshu Modi
+        </a>
+    </footer>
+
+    <audio id="audio" controls style="display:none">
+        <source src="confettisound.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+    <!-- <audio id="keypressaudio" controls style="display:none">
+        <source src="keypressaudio.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio> -->
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="jquery.confetti.js"></script>
+<script>
+    var start; var temp;
+    var highscore = document.getElementById("highscore");
+    var lastscore = document.getElementById("lastscore");
+    function keystriker(run, count, sec)
+    { 
+        const keys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        function getRandomNumber() {
+            var randomnumber = Math.floor(Math.random()*26);
+            console.log(randomnumber);
+            return randomnumber;
+        }
+
+        function getRandomKey() {
+            return keys.charAt(getRandomNumber());
+        }
+
+        function targetRandomKey() {
+            document.body.classList.add("hidescore");
+            if(run===0)
+            {
+                start = Date.now(); console.log("start: " + start);
+                run=1;
+            }
+            var timepass = (Date.now()-start)/1000; console.log("timepass: " + timepass);
+            var key = document.getElementById(getRandomKey());        
+            key.classList.add("selected");
+        }
+
+        document.addEventListener("keyup", event => {      
+        var keyPressed = String.fromCharCode(event.keyCode);
+        var keyElement = document.getElementById(keyPressed);     
+        var highlightedKey = document.querySelector(".selected"); 
+        keyElement.classList.add("hit");  
+        keyElement.addEventListener('animationend', () => {  
+            keyElement.classList.remove("hit");
+        })
+
+        if (keyPressed === highlightedKey.innerHTML) {  
+            // document.getElementById("keypressaudio").play();
+            highlightedKey.classList.remove("selected");
+            console.log((Date.now()-start)/1000)
+            var f;
+            if((Date.now()-start)/1000 < 30)
+            {
+                // document.getElementById("keypressaudio").pause();
+                // document.getElementById("keypressaudio").load();
+                targetRandomKey(); 
+            }
+            else{
+                if(temp > count)
+                {
+                    highscore.innerHTML="High Score " + temp;
+                    f=0;
+                }
+                else{
+                    temp = count;
+                    highscore.innerHTML="High Score: " + count;
+                    f=1;
+                }
+                console.log("temp: " + temp);
+                if(f==1){
+                    if(count==0)
+                    {
+                        lastscore.innerHTML = "Last Score: " + count;    
+                    }
+                    else
+                    {
+                        lastscore.innerHTML = "Last Score: " + count + " 🎉";
+                        // confetti 
+                        const confettisound = document.getElementById("audio");
+                        confettisound.volume = 0.2;
+                        confettisound.play();
+                        
+                        const startit = () => {
+                            setTimeout(function () {
+                            console.log("start");
+                            $.confetti.start();
+                            }, 1000);
+                        };
+
+                        const stopit = () => {
+                            setTimeout(function () {
+                            console.log("stop");
+                            $.confetti.stop();
+                            }, 2000);
+                        };
+
+                        startit();
+                        stopit();
+                        // confetti end
+                    }
+                }
+                else
+                    lastscore.innerHTML = "Last Score: " + count;
+                count=-1;
+                document.body.classList.remove("hidescore");
+            }
+            count++;
+            var score = document.getElementById("score");
+            score.innerText=count;  
+        } 
+        })
+        targetRandomKey();
+    }
+    function timerfunction()
+    {
+        var game = document.body;
+        game.classList.add("gameon");
+        var sec = 29;
+        var timer = setInterval(function(){
+            document.getElementById("timer").innerHTML=sec;
+            sec--;
+            if (sec < 0) {
+                clearInterval(timer);
+                game.classList.remove("gameon");
+                document.getElementById("timer").innerHTML="30";
+            }
+        }, 1000);
+        var count=0; var run=0; 
+        keystriker(run, count, sec);
+    }   
+   
+    function openmenu() {
+        document.body.classList.add("menuopen");
+    }
+    function closemenu() {
+        document.body.classList.remove("menuopen");
+        document.bdy.classList.add("menuclose");
+    }
+
+    function red(){
+        document.body.classList.add("redtheme");
+        document.body.classList.remove("menuopen");
+        document.bdy.classList.add("menuclose");
+    }
+    function black(){
+        document.body.classList.remove("redtheme");
+        document.body.classList.remove("menuopen");
+        document.bdy.classList.add("menuclose"); 
+    }
+
+    function openindex(){
+        window.open("index.html", "_self");
+    }
+
+    document.getElementsByTagName("li").addEventListener("keydown", function(e) {
+    if(document.getElementById("audio").paused)
+        document.getElementById("audio").play();
+    else
+        document.getElementById("audio").pause;
+    });
+
+    function easylink(){
+        window.open("easy.html", "_self");
+    }
+    function mediumlink(){
+        window.open("medium.html", "_self");
+    }
+    function hardlink(){
+        window.open("hard.html", "_self");
+    }
+
+    function opengmail(){
+        window.open("mailto:priyanshumodi.1909@gmail.com");
+    }
+    function openlinkedin(){
+        window.open("https://www.linkedin.com/in/priyanshu-modi-5675941b5/");
+    }
+</script>
+</body>
+</html>
