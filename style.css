@@ -383,7 +383,7 @@ a{
     transition: all 0.3s ease;
     background-color: #d49c00;
     border-radius: 50px;
-    transform: translateY(-4px);
+    transform: scale(0.8);
 }
 .redtheme #rule{
     background: radial-gradient(circle at -100% -300%, #e77102 55%, #ffae00 65%);
@@ -391,6 +391,21 @@ a{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.redtheme #twitterlogostatic{
+    transition: all 0.3s ease;
+    padding: 5px;
+    margin-top: 35px;
+    margin-bottom: autos;
+    width: 30px;
+    justify-self: center;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-filter: 
+      brightness(50%) sepia(1) hue-rotate(5deg) saturate(400.2%) brightness(130%);
+    filter: 
+      brightness(50%) sepia(1) hue-rotate(5deg) saturate(400.2%) brightness(130%);
+}
+
 
 
 .timer, .score{
@@ -1086,7 +1101,7 @@ a{
     transition: all 0.3s ease;
     background-color: #bb1515;
     border-radius: 50px;
-    transform: translateY(-4px);
+    transform: translateY(-4px)
 }
 
 
@@ -1172,3 +1187,44 @@ a{
 #challengekeyboard{
     margin-top: 5px;
 }
+.twittershare{
+    display:none;
+    width: 50px;
+    position: relative;
+    right: 240px;
+    bottom: 105px;
+}
+.completed .twittershare{
+    display: inline-block;
+    right: 270px;
+}
+.passed .twittershare{
+    display: inline-block;
+}
+#twitterlogostatic{
+    transition: all 0.3s ease;
+    padding: 5px;
+    margin-top: 35px;
+    margin-bottom: autos;
+    width: 30px;
+    justify-self: center;
+    margin-left: 5px;
+    cursor: pointer;
+    -webkit-filter: 
+      brightness(50%) sepia(1) hue-rotate(5deg) saturate(400.2%) brightness(110%);
+    filter: 
+      brightness(50%) sepia(1) hue-rotate(5deg) saturate(400.2%) brightness(110%);
+}
+#twitterlogostatic:hover{
+    transition: all 0.3s ease;
+    transform: rotate(20deg);
+    -webkit-filter: 
+      brightness(50%) sepia(1) hue-rotate(180deg) saturate(300.2%) brightness(100%);
+    filter: 
+      brightness(50%) sepia(1) hue-rotate(180deg) saturate(300.2%) brightness(100%);
+    padding: 5px;
+    /* box-shadow: 0px 0px 20px #ffbb00ab; */
+    border-radius: 100px;
+}
+
+
