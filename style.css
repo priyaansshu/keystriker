@@ -1086,7 +1086,7 @@ a{
     transition: all 0.3s ease;
     background-color: #bb1515;
     border-radius: 50px;
-    transform: translateY(-4px)
+    transform: translateY(-4px);
 }
 
 
