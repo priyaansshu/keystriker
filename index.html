@@ -143,6 +143,9 @@
             <p id="lastscore"></p>
         </div>
     </div>
+    <div class="twittershare">
+        <img src="images/twitterlogowhite.png" alt="twitterlogo" id="twitterlogostatic" onclick="twitterfunction()">
+    </div>
     </div> <!--container-->
     <footer class="footer">
         <a href="https://www.linkedin.com/in/priyanshu-modi-5675941b5/" class="linkedin" target="_blank">
@@ -150,16 +153,14 @@
         </a>
     </footer>
 
-    <audio id="audio" controls style="display:none">
+    <!-- <audio id="audio" controls style="display:none">
         <source src="confettisound.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-    </audio>
-    <!-- <audio id="keypressaudio" controls style="display:none">
-        <source src="keypressaudio.mp3" type="audio/mpeg"> Your browser does not support the audio element.
     </audio> -->
 
 <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="jquery.confetti.js"></script>
 <script>
+    var twitterscorecount;
     var start; var temp;
     var highscore = document.getElementById("highscore");
     var lastscore = document.getElementById("lastscore");
@@ -198,17 +199,16 @@
         })
 
         if (keyPressed === highlightedKey.innerHTML) {  
-            // document.getElementById("keypressaudio").play();
             highlightedKey.classList.remove("selected");
             console.log((Date.now()-start)/1000)
             var f;
             if((Date.now()-start)/1000 < 30)
             {
-                // document.getElementById("keypressaudio").pause();
-                // document.getElementById("keypressaudio").load();
                 targetRandomKey(); 
             }
             else{
+                twitterscorecount = count;
+                document.body.classList.add("completed");
                 if(temp > count)
                 {
                     highscore.innerHTML="High Score " + temp;
@@ -221,7 +221,7 @@
                 }
                 console.log("temp: " + temp);
                 if(f==1){
-                    if(count==0)
+                    if(count==0)        // If highscore has been beaten but score is 0
                     {
                         lastscore.innerHTML = "Last Score: " + count;    
                     }
@@ -229,26 +229,23 @@
                     {
                         lastscore.innerHTML = "Last Score: " + count + " 🎉";
                         // confetti 
-//                         const confettisound = document.getElementById("audio");
-//                         confettisound.volume = 0.2;
-//                         confettisound.play();
-                        
-//                         const startit = () => {
-//                             setTimeout(function () {
-//                             console.log("start");
-//                             $.confetti.start();
-//                             }, 1000);
-//                         };
-
-//                         const stopit = () => {
-//                             setTimeout(function () {
-//                             console.log("stop");
-//                             $.confetti.stop();
-//                             }, 2000);
-//                         };
-
-//                         startit();
-//                         stopit();
+                        // const confettisound=document.getElementById("audio");
+                        // confettisound.volume = 0.2;
+                        // confettisound.play();
+                        // const startit = () => {
+                        //     setTimeout(function () {
+                        //     console.log("start");
+                        //     $.confetti.start();
+                        //     }, 1000);
+                        // };
+                        // const stopit = () => {
+                        //     setTimeout(function () {
+                        //     console.log("stop");
+                        //     $.confetti.stop();
+                        //     }, 2000);
+                        // };
+                        // startit();
+                        // stopit();
                         // confetti end
                     }
                 }
@@ -328,6 +325,15 @@
     function openlinkedin(){
         window.open("https://www.linkedin.com/in/priyanshu-modi-5675941b5/");
     }
+
+    function twitterfunction(){
+        if(twitterscorecount < 2)
+            window.open("https://twitter.com/intent/tweet?hashtags=KeyStriker&text=" + "I struck "+ twitterscorecount + " key in under 30 seconds in this game 🙌🏼 Play and see if you can do it too! https://priyaansshu.github.io/keystriker");
+        else
+            window.open("https://twitter.com/intent/tweet?hashtags=KeyStriker&text=" + "I struck "+ twitterscorecount + " keys in under 30 seconds in this game 🙌🏼 Play and see if you can do it too! https://priyaansshu.github.io/keystriker");
+    }
 </script>
 </body>
 </html>
+
+
