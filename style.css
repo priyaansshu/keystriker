@@ -292,7 +292,8 @@ a{
 }
 .redtheme #playbutton:hover{
     transition: all 0.3s ease;
-    background: radial-gradient(circle at -100% -300%, #db7909 55%,#ffc400 80%);
+/*     background: radial-gradient(circle at -100% -300%, #db7909 55%,#ffc400 80%); */
+    background: radial-gradient(circle at -100% -300%, #9b0404 55%,#bd0d0d 80%);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 }
 .redtheme .footer{
