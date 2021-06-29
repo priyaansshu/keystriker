@@ -6,7 +6,6 @@
     font-family: "SFProDisplayLight";
     src: url("FontsFree-Net-SFProDisplay-Light.ttf");
 }
-
 body {
     transition: all 1 ease;
     background: rgb(0, 0, 0);
@@ -278,7 +277,7 @@ a{
 
 /* red theme */
 .redtheme{
-    background-image: url("images/abstract4.jpg");
+    background-image: url("images/alex-perez-ioJBsYQ-pPM-unsplash.jpg");
     background-color: rgb(0, 0, 0);
     background-attachment: fixed;
     background-size: cover;
@@ -297,7 +296,7 @@ a{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
 }
 .redtheme .footer{
-    background-color: rgba(54, 39, 39, 0.473);
+    background-color: rgba(202, 202, 202, 0.1);
     -webkit-backdrop-filter: blur(100px);
     backdrop-filter: blur(100px);
 }
@@ -308,7 +307,7 @@ a{
     color: rgba(70, 70, 70, 0.815);
 }
 .redtheme .openmenu1, .redtheme .openmenu2, .redtheme .closemenu1, .redtheme .closemenu2, .redtheme .menucontent{
-    background-color: rgba(54, 39, 39, 0.473);
+    background-color: rgba(99, 75, 75, 0.596);
 }
 .redtheme #aboutheading, .redtheme #modesheading, .redtheme #themesheading{
     color: rgba(255, 255, 255, 0.534);
@@ -348,27 +347,19 @@ a{
 }
 .redtheme .easylink,.redtheme .mediumlink,.redtheme .hardlink{
     text-decoration: none;
-    /* background: radial-gradient(circle at -100% -300%, #db7909 55%,#ffc400 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
     color: white;
 }
 .redtheme .blacktext,.redtheme .redtext{
-    /* background: radial-gradient(circle at -100% -300%, #db7909 55%,#ffc400 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
     color: white;
 }
 .redtheme .modeslist li:hover{
-    background: radial-gradient(circle at -100% -300%, #db7909 55%,#d49c00 80%);
+    background: radial-gradient(circle at -100% -300%, #9b0404 55%,#bd0d0d 80%);
 }
 .redtheme .themeslist li:hover{
-    background: radial-gradient(circle at -100% -300%, #db7909 55%,#d49c00 80%);
+    background: radial-gradient(circle at -100% -300%, #9b0404 55%,#bd0d0d 80%);
 }
 .redtheme #statement{   /* speed up redtheme */
-    background: radial-gradient(circle at -100% -300%, #030447 55%,#0875a0 80%);
+    background: radial-gradient(circle at -100% -300%, #bb0505 55%,#ff1e00 80%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -381,10 +372,15 @@ a{
 }
 .redtheme #gmail:hover, .redtheme #linkedin:hover{
     transition: all 0.3s ease;
-    background-color: #d49c00;
+    background-color: #bb1515;
     border-radius: 50px;
-    transform: transformY(-4px);
+    transform: translateY(-4px);
 }
+/* .redtheme .rule{
+    background-color: rgba(122, 12, 34, 0.301);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+} */
 .redtheme #rule{
     background: radial-gradient(circle at -100% -300%, #e77102 55%, #ffae00 65%);
     -webkit-background-clip: text;
@@ -952,7 +948,7 @@ a{
     color: white;
 }
 .modeslist li:hover{
-    background: radial-gradient(circle at -100% -300%, #9b0404 55%,#bd0d0d 80%);
+    background: radial-gradient(circle at -100% -300%, #db7909 55%,#d49c00 80%);
     transition: all 0.3s ease; 
     transform: translateY(-4px);
 }
@@ -1025,7 +1021,8 @@ a{
     color: white;
 }
 .themeslist li:hover{
-    background: radial-gradient(circle at -100% -300%, #9b0404 55%,#bd0d0d 80%);
+    /* background: radial-gradient(circle at -100% -300%, #9b0404 55%,#bd0d0d 80%); */
+    background: radial-gradient(circle at -100% -300%, #db7909 55%,#d49c00 80%);
     transition: all 0.3s ease; 
     transform: translateY(-4px);
 }
@@ -1099,7 +1096,7 @@ a{
 }
 #gmail:hover, #linkedin:hover{
     transition: all 0.3s ease;
-    background-color: #bb1515;
+    background-color: #d49c00;
     border-radius: 50px;
     transform: translateY(-4px)
 }
@@ -1170,7 +1167,17 @@ a{
 /* .gameon .rule{
     display: none;
 } */
+.rule{
+    margin: 10px 0px;
+    height: 25px;
+    width: 400px;
+    border-radius: 8px;
+    background-color: transparent;
+}
 #rule{
+    text-align: center;
+    line-height: 25px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
